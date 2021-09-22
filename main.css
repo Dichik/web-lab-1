@@ -1,0 +1,144 @@
+.item1 {
+    grid-area: header;
+    height: 1fr;
+}
+
+.item2 {
+    grid-area: section5;
+    height: 80px;
+}
+
+.item3 {
+    grid-area: main;
+    height: 390px;
+}
+
+.item4 {
+    grid-area: left;
+    height: 390px;
+}
+
+.item5 {
+    grid-area: right;
+    height: 525px;
+}
+
+.item6 {
+    grid-area: footer;
+    height: 50px;
+}
+
+.grid-container {
+    display: grid;
+    height: 725px;
+    grid-template-areas:
+        "header header header header"
+        "left main main right"
+        "section5 section5 section5 right"
+        "footer footer footer footer";
+    grid-gap: 10px;
+    background-color: #d6d6d6;
+    padding: 10px;
+    font-size: 15px;
+    font-family: Courier, serif;
+}
+
+.border-div {
+    border: 2px dotted;
+}
+
+.grid-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+}
+
+#link-to-smth {
+    text-decoration: none;
+    color: black;
+}
+
+#home {
+    position: absolute;
+    right: 450px;
+    top: 25px;
+    width: 60px;
+    height: 50px;
+}
+
+#contact {
+    position: absolute;
+    right: 330px;
+    top: 25px;
+    width: 40px;
+    height: 50px;
+}
+
+#items {
+    position: absolute;
+    right: 160px;
+    top: 25px;
+    width: 30px;
+    height: 50px;
+}
+
+#stl {
+    position: absolute;
+    left: 100px;
+    top: 19px;
+    font-family: "Architects Daughter", cursive;
+}
+
+#hr-logo-1 {
+    position: absolute;
+    width: 200px;
+    left: 100px;
+    top: 25px;
+    transform: rotate(-7deg);
+}
+
+#hr-logo-2 {
+    position: absolute;
+    width: 200px;
+    left: 100px;
+    top: 25px;
+    transform: rotate(7deg);
+}
+
+#slogan-2 {
+    position: absolute;
+    left: 100px;
+    bottom: 10px;
+    font-size: 20px;
+    font-family: "Architects Daughter", cursive;
+}
+
+.text-main {
+    position: absolute;
+    font-size: 15px;
+    padding-left: 40px;
+}
+
+.for-ol {
+    padding-left: 50px;
+}
+
+#second {
+    padding-top: 30px;
+}
+#third {
+    padding-top: 60px;
+}
+#fourth {
+    padding-top: 90px;
+}
+#fifth {
+    padding-top: 120px;
+}
+
+#smile {
+    position: absolute;
+    top: 250px;
+    right: 75px;
+}
