@@ -1,8 +1,1 @@
-# Created by .ignore support plugin (hsz.mobi)
-.eslintrc.js
-.idea/.gitignore
-.idea/misc.xml
-.idea/modules.xml
-.idea/vcs.xml
-.idea/web-lab-1.iml
-
+node_modules
