@@ -14,13 +14,15 @@
         "stylelint-config-standard": "^22.0.0"
     },
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "test": "eslint .",
+        "prepare": "husky install",
+        "stylelint": "npx stylelint \"**/*.css\""
     },
     "repository": {
         "type": "git",
         "url": "git+https://github.com/Dichik/web-lab-1.git"
     },
-    "author": "",
+    "author": "Dima",
     "license": "ISC",
     "bugs": {
         "url": "https://github.com/Dichik/web-lab-1/issues"
