@@ -1,43 +1,83 @@
-.item1 {
-    grid-area: header;
-    height: 1fr;
+:root {
+    --main-bg-color: white;
+    --grid-color: #d6d6d6;
+    --link-color: black;
 }
 
-.item2 {
+.item1 {
+    grid-area: header;
+    height: 70px;
+    background: var(--main-bg-color);
+    font-size: 25px;
+    font-family: "Architects Daughter", cursive;
+
+    min-width: 500px;
+}
+
+.item2 { 
     grid-area: section5;
-    height: 80px;
+    height: 70px;
+    background: var(--main-bg-color);
 }
 
 .item3 {
+    height: 640px;
     grid-area: main;
-    height: 390px;
+    background: var(--main-bg-color);
+
+    min-width: 200px;
 }
 
 .item4 {
     grid-area: left;
-    height: 390px;
+    background: var(--main-bg-color);
+    height: 640px;
+    width: 300px;
 }
 
 .item5 {
     grid-area: right;
-    height: 525px;
+    background: var(--main-bg-color);
+    height: 765px;
+    width: 300px;
 }
 
 .item6 {
+    background: var(--main-bg-color);
     grid-area: footer;
-    height: 50px;
+    height: 70px;
+}
+
+@media only screen and (max-width: 900px) { 
+    #stl { 
+      display: none; 
+    } 
+    #hr-logo-first {
+        display: none;
+    }
+    #hr-logo-second {
+        display: none;
+    }
+  }
+
+.text-main {
+    font-size: 15px;
+}
+
+p {
+    font-size: 15px;
 }
 
 .grid-container {
     display: grid;
-    height: 725px;
+    height: auto;
     grid-template-areas:
         "header header header header"
         "left main main right"
         "section5 section5 section5 right"
         "footer footer footer footer";
     grid-gap: 10px;
-    background-color: #d6d6d6;
+    background-color: var(--grid-color);
     padding: 10px;
     font-size: 15px;
     font-family: Courier, serif;
@@ -45,10 +85,13 @@
 
 .border-div {
     border: 2px dotted;
+
+    overflow: hidden;
+    overflow-y: scroll;
 }
 
 .grid-container > div {
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: var(--main-bg-color);
     text-align: center;
     padding: 20px 0;
     font-size: 30px;
@@ -56,7 +99,7 @@
 
 #link-to-smth {
     text-decoration: none;
-    color: black;
+    color: var(--link-color);
 }
 
 #home {
@@ -87,10 +130,9 @@
     position: absolute;
     left: 100px;
     top: 19px;
-    font-family: "Architects Daughter", cursive;
 }
 
-#hr-logo-1 {
+#hr-logo-first {
     position: absolute;
     width: 200px;
     left: 100px;
@@ -98,7 +140,7 @@
     transform: rotate(-7deg);
 }
 
-#hr-logo-2 {
+#hr-logo-second {
     position: absolute;
     width: 200px;
     left: 100px;
@@ -106,18 +148,11 @@
     transform: rotate(7deg);
 }
 
-#slogan-2 {
-    position: absolute;
+#slogan {
     left: 100px;
     bottom: 10px;
     font-size: 20px;
     font-family: "Architects Daughter", cursive;
-}
-
-.text-main {
-    position: absolute;
-    font-size: 15px;
-    padding-left: 40px;
 }
 
 .for-ol {
@@ -140,5 +175,5 @@
 #smile {
     position: absolute;
     top: 250px;
-    right: 75px;
+    right: 80px;
 }
