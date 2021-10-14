@@ -97,7 +97,7 @@ p {
     font-size: 30px;
 }
 
-#link-to-smth {
+.link-to-smth {
     text-decoration: none;
     color: var(--link-color);
 }
