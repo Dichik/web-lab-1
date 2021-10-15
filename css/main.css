@@ -10,7 +10,7 @@
   height: 70px;
   background: var(--main-bg-color);
   font-size: 25px;
-  font-family: "Architects Daughter", cursive;
+  font-family: 'Architects Daughter', cursive;
   min-width: 500px;
 }
 
@@ -78,10 +78,10 @@ p {
   display: grid;
   height: auto;
   grid-template-areas:
-    "header header header header"
-    "left main main right"
-    "section5 section5 section5 right"
-    "footer footer footer footer";
+    'header header header header'
+    'left main main right'
+    'section5 section5 section5 right'
+    'footer footer footer footer';
   grid-gap: 10px;
   background-color: var(--grid-color);
   padding: 10px;
@@ -118,7 +118,7 @@ p {
   left: 100px;
   bottom: 10px;
   font-size: 20px;
-  font-family: "Architects Daughter", cursive;
+  font-family: 'Architects Daughter', cursive;
 }
 
 .for-ol {
