@@ -3,8 +3,8 @@
     --grid-color: #d6d6d6;
     --link-color: black;
 }
-
-.item1 {
+/*1*/
+.item-header {
     grid-area: header;
     height: 70px;
     background: var(--main-bg-color);
@@ -13,36 +13,36 @@
 
     min-width: 500px;
 }
-
-.item2 { 
+/*2*/
+.item-div { 
     grid-area: section5;
     height: 70px;
     background: var(--main-bg-color);
 }
-
-.item3 {
+/*3*/
+.item-article {
     height: 640px;
     grid-area: main;
     background: var(--main-bg-color);
 
     min-width: 200px;
 }
-
-.item4 {
+/*4*/
+.item-section {
     grid-area: left;
     background: var(--main-bg-color);
     height: 640px;
     width: 300px;
 }
-
-.item5 {
+/*5*/
+.item-aside {
     grid-area: right;
     background: var(--main-bg-color);
     height: 765px;
     width: 300px;
 }
-
-.item6 {
+/*6*/
+.item-footer {
     background: var(--main-bg-color);
     grid-area: footer;
     height: 70px;
@@ -88,6 +88,7 @@ p {
 
     overflow: hidden;
     overflow-y: scroll;
+    overflow-y: hidden;
 }
 
 .grid-container > div {
@@ -102,50 +103,10 @@ p {
     color: var(--link-color);
 }
 
-#home {
-    position: absolute;
-    right: 450px;
-    top: 25px;
-    width: 60px;
-    height: 50px;
-}
-
-#contact {
-    position: absolute;
-    right: 330px;
-    top: 25px;
-    width: 40px;
-    height: 50px;
-}
-
-#items {
-    position: absolute;
-    right: 160px;
-    top: 25px;
-    width: 30px;
-    height: 50px;
-}
-
 #stl {
-    position: absolute;
-    left: 100px;
-    top: 19px;
-}
-
-#hr-logo-first {
-    position: absolute;
-    width: 200px;
-    left: 100px;
-    top: 25px;
-    transform: rotate(-7deg);
-}
-
-#hr-logo-second {
-    position: absolute;
-    width: 200px;
-    left: 100px;
-    top: 25px;
-    transform: rotate(7deg);
+    display: flex;
+    padding-left: 100px;
+    padding-top: 10px;
 }
 
 #slogan {
@@ -170,10 +131,4 @@ p {
 }
 #fifth {
     padding-top: 120px;
-}
-
-#smile {
-    position: absolute;
-    top: 250px;
-    right: 80px;
 }
