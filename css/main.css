@@ -53,15 +53,7 @@
 }
 
 @media only screen and (max-width: 900px) {
-  #stl {
-    display: none;
-  }
-
-  #hr-logo-first {
-    display: none;
-  }
-
-  #hr-logo-second {
+  .stl {
     display: none;
   }
 }
@@ -108,7 +100,7 @@ p {
   color: var(--link-color);
 }
 
-#stl {
+.stl {
   display: flex;
   padding-left: 100px;
   padding-top: 10px;
